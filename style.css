@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-
+/* this line code for root of the color */
 :root {
   --line-border-fill: #3498db;
   --line-border-empty: #383838;
 
 }
+
+/* this line code for box design */
 
 * {
   box-sizing: border-box;
@@ -20,7 +22,7 @@ body {
   overflow: hidden;
   margin: 0;
 }
-
+/* this line code for progress-container */
 .container {
   text-align: center;
 }
@@ -33,7 +35,7 @@ body {
   max-width: 100%;
   width: 350px;
 }
-
+/* this line code for before progress container  */
 .progress-container::before {
   content: '';
   background-color: var(--line-border-empty);
@@ -45,7 +47,7 @@ body {
   width: 100%;
   z-index: -1;
 }
-
+/* this line code for progress */
 .progress {
   background-color: var(--line-border-fill);
   position: absolute;
@@ -57,7 +59,7 @@ body {
   z-index: -1;
   transition: 0.4s ease;
 }
-
+/* this line code for circle  */
 .circle {
   background-color: #1f1f1f;
   color:#e2e2e2;
@@ -70,10 +72,12 @@ body {
   border: 3px solid var(--line-border-empty);
   transition: 0.4s ease;
 }
-
+/* this line code for cicle active */
 .circle.active {
   border-color: var(--line-border-fill);
 }
+
+/* this code for btn */
 
 .btn {
   background-color: var(--line-border-fill);
@@ -87,14 +91,18 @@ body {
   font-size: 14px;
 }
 
+/* this code for btn active */
 .btn:active {
   transform: scale(0.98);
 }
 
+
+/* this code for btn focus */
 .btn:focus {
   outline: 0;
 }
 
+/* this code for disabled */
 .btn:disabled {
   background-color: var(--line-border-empty);
   cursor: not-allowed;
